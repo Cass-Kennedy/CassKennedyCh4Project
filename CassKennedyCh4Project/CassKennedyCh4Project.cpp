@@ -22,4 +22,5 @@ int main()
             cout << "The month has 28 days.";
         }
     }
+    return 0;
 }
