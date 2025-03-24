@@ -1,20 +1,25 @@
-// CassKennedyCh4Project.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    int month, year;
+
+    cout << "Enter the month then the year as numbers with a space in between: ";
+    cin >> month;
+    cin >> year;
+    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+        cout << "The month has 31 days";
+    }
+    else if (month != 2) {
+        cout << "The month has 30 days";
+    }
+    else {
+        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+            cout << "The month has 29 days.";
+        }
+        else {
+            cout << "The month has 28 days.";
+        }
+    }
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
