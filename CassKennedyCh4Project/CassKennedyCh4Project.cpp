@@ -3,23 +3,26 @@
 using namespace std;
 int main()
 {
-    int month, year;
+    int weight, distance;
 
-    cout << "Enter the month then the year as numbers with a space in between: ";
-    cin >> month;
-    cin >> year;
-    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
-        cout << "The month has 31 days";
+    cout << "Enter the weight of your package in kilograms: ";
+    cin >> weight;
+    cout << "Enter the distance in kilometers your package will be shipped: ";
+    cin >> distance;
+    if (weight <= 0 || weight > 20 || distance < 10 || distance < 3000) {
+        cout << "Please enter a valid weight and distance";
     }
-    else if (month != 2) {
-        cout << "The month has 30 days";
+    else if (weight < 2 ) {
+        cout << "The price of shipping is $" << ;
     }
-    else {
-        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
-            cout << "The month has 29 days.";
-        }
-        else {
-            cout << "The month has 28 days.";
-        }
+    else if (weight >= 2 && weight < 6) {
+        cout << "The price of shipping is $" << ;
     }
+    else if (weight >= 6 && weight < 10) {
+        cout << "The price of shipping is $" << ;
+    }
+    else if (weight >= 10 && weight < 20) {
+        cout << "The price of shipping is $" << ;
+    }
+    return 0;
 }
