@@ -31,7 +31,7 @@ int main()
             cout << 0.5 * base * height << " u^2";
             break;
         case 4:
-            cout << "\nGoodbye";
+            cout << "Goodbye";
             break;
         default:
             cout << "Please enter a valid option\n";
