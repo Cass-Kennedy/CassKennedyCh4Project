@@ -4,8 +4,9 @@ using namespace std;
 int main()
 {
     //Setting up the necessary variables.
-    int choice, radius, length, width, base, height;
-    float pi = 3.14159;
+    int choice;
+    float pi, radius, length, width, base, height;
+    pi = 3.14159;
 
     //Sets up a menu with four choices -- circle, rectangle, triangle, and quit. The first three will calculate the are of that shape.
     cout << "1. Calculate the Area of a Circle\n";
