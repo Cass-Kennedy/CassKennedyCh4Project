@@ -20,7 +20,7 @@ int main()
             cout << "Enter the radius of the circle ";
             cin >> radius;
             if (radius < 0) {
-                cout << "Enter a positive radius";
+                cout << "Enter a positive radius"; //Error message.
             }
             else {
                 cout << radius * radius * pi << " u^2";
@@ -31,7 +31,7 @@ int main()
             cin >> length;
             cin >> width;
             if (length < 0 || width < 0) {
-                cout << "Enter positive side lengths";
+                cout << "Enter positive side lengths"; //Error message.
             }
             else {
                 cout << length * width << " u^2"; //This is the side lengths multiplied together.
@@ -42,7 +42,7 @@ int main()
             cin >> base;
             cin >> height;
             if (base < 0 || height < 0) {
-                cout << "Enter positive dimensions";
+                cout << "Enter positive dimensions"; //Error message.
             }
             else {
                 cout << 0.5 * base * height << " u^2"; //This is the area of the triangle's dimensions multiplied and halved.
@@ -52,7 +52,7 @@ int main()
             cout << "Goodbye"; //Ends the program without calculation.
             break;
         default:
-            cout << "Please enter a valid option\n"; //Error Message.
+            cout << "Please enter a valid option\n"; //Error message.
 }
     return 0;
 }
