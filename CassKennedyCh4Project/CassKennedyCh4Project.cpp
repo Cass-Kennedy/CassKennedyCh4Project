@@ -19,19 +19,34 @@ int main()
         case 1:
             cout << "Enter the radius of the circle ";
             cin >> radius;
-            cout << radius * radius * pi << " u^2"; //This is pi*radius^2 expressed as r*r*pi.
+            if (radius < 0) {
+                cout << "Enter a positive radius";
+            }
+            else {
+                cout << radius * radius * pi << " u^2";
+            } //This is pi*radius^2 expressed as r*r*pi.
             break;
         case 2:
             cout << "Enter the rectangle's side lengths ";
             cin >> length;
             cin >> width;
-            cout << length * width << " u^2"; //This is the side lengths multiplied together.
+            if (length < 0 || width < 0) {
+                cout << "Enter positive side lengths";
+            }
+            else {
+                cout << length * width << " u^2"; //This is the side lengths multiplied together.
+            }
             break;
         case 3:
             cout << "Enter the base and height of the triangle ";
             cin >> base;
             cin >> height;
-            cout << 0.5 * base * height << " u^2"; //This is the area of the triangle's dimensions multiplied and halved.
+            if (base < 0 || height < 0) {
+                cout << "Enter positive dimensions";
+            }
+            else {
+                cout << 0.5 * base * height << " u^2"; //This is the area of the triangle's dimensions multiplied and halved.
+            }
             break;
         case 4:
             cout << "Goodbye"; //Ends the program without calculation.
