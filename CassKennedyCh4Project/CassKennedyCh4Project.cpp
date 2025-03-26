@@ -35,13 +35,13 @@ int main()
     else if (weight <= 2) {
                 cout << "The price of shipping is $" << priceCounter*lowWeightFare << "0";
     }
-    else if (weight > 2 && weight < 6) {
+    else if (weight > 2 && weight <= 6) {
         cout << "The price of shipping is $" << priceCounter*lowMidWeightFare << "0";
     }
-    else if (weight >= 6 && weight < 10) {
+    else if (weight > 6 && weight <= 10) {
         cout << "The price of shipping is $" << priceCounter*midWeightFare << "0";
     }
-    else if (weight >= 10 && weight < 20) {
+    else if (weight > 10 && weight <= 20) {
         cout << "The price of shipping is $" << priceCounter*highWeightFare << "0";
     }
     return 0;
